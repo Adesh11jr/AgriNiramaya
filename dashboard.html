@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | AgriNiramaya</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">♧</span>
+            <h2>AgriNiramaya</h2>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="farm.html">Farm Management</a>
+            <a href="disease-detection.html">Disease Detection</a>
+            <a href="soil-monitoring.html">Soil Monitoring</a>
+            <a href="assistant.html">AI Assistant</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="btn btn-outline">Logout</a>
+        </div>
+
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="dashboard-welcome">
+
+            <div>
+                <span class="dashboard-label">FARM MANAGEMENT OVERVIEW</span>
+
+                <h1>Welcome to Your Dashboard</h1>
+
+                <p>
+                    Your farming insights will appear here once
+                    you add your farm details and connect your data.
+                </p>
+            </div>
+
+            <a href="farm.html" class="btn btn-primary">
+                + Add Farm Details
+            </a>
+
+        </section>
+
+        <section class="overview-grid">
+
+            <div class="overview-card">
+                <div class="overview-icon">⌂</div>
+                <p>Total Farms</p>
+                <h2>No data yet</h2>
+                <span>Add your farm information to get started.</span>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-icon">♧</div>
+                <p>Total Crops</p>
+                <h2>No data yet</h2>
+                <span>Your registered crops will appear here.</span>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-icon">✿</div>
+                <p>Plant Health</p>
+                <h2>Awaiting Analysis</h2>
+                <span>Upload a leaf image for AI analysis.</span>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-icon">⌁</div>
+                <p>Soil Status</p>
+                <h2>Not Available</h2>
+                <span>Connect your soil monitoring device.</span>
+            </div>
+
+        </section>
+
+        <section class="dashboard-main-grid">
+
+            <div class="dashboard-panel">
+
+                <div class="panel-heading">
+                    <div>
+                        <h2>Soil Monitoring</h2>
+                        <p>Your latest soil sensor information</p>
+                    </div>
+
+                    <a href="soil-monitoring.html">View Details →</a>
+                </div>
+
+                <div class="empty-data-grid">
+
+                    <div class="empty-data-card">
+                        <span>Soil Moisture</span>
+                        <h3>--</h3>
+                        <small>Waiting for sensor data</small>
+                    </div>
+
+                    <div class="empty-data-card">
+                        <span>Temperature</span>
+                        <h3>--</h3>
+                        <small>Waiting for sensor data</small>
+                    </div>
+
+                    <div class="empty-data-card">
+                        <span>Soil pH</span>
+                        <h3>--</h3>
+                        <small>Waiting for sensor data</small>
+                    </div>
+
+                </div>
+
+                <div class="sensor-status">
+                    <span class="status-dot"></span>
+                    No sensor data received yet
+                </div>
+
+            </div>
+
+            <div class="dashboard-panel plant-health-panel">
+
+                <div class="panel-heading">
+                    <div>
+                        <h2>Plant Health</h2>
+                        <p>AI-powered plant health insights</p>
+                    </div>
+                </div>
+
+                <div class="empty-health">
+
+                    <div class="empty-health-icon">✿</div>
+
+                    <h3>Analysis Not Available</h3>
+
+                    <p>
+                        Upload a plant or leaf image to receive
+                        disease predictions and plant health insights.
+                    </p>
+
+                    <a href="disease-detection.html" class="panel-button">
+                        Upload Plant Image →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="dashboard-panel recent-detection">
+
+            <div class="panel-heading">
+
+                <div>
+                    <h2>Recent Disease Detection</h2>
+                    <p>Your latest AI analysis results</p>
+                </div>
+
+                <a href="history.html">View History →</a>
+
+            </div>
+
+            <div class="empty-state">
+
+                <span class="empty-state-icon">✿</span>
+
+                <h3>No Analysis Yet</h3>
+
+                <p>
+                    Your disease detection results will appear here
+                    after you upload a plant image and complete an AI analysis.
+                </p>
+
+                <a href="disease-detection.html" class="btn btn-primary">
+                    Start Detection
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="quick-actions-section">
+
+            <div class="panel-heading">
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>Get started with AgriNiramaya features</p>
+                </div>
+            </div>
+
+            <div class="quick-actions-grid">
+
+                <a href="farm.html" class="quick-action-card">
+                    <span>⌂</span>
+                    <h3>Add Farm Details</h3>
+                    <p>Enter your farm and crop information.</p>
+                </a>
+
+                <a href="disease-detection.html" class="quick-action-card">
+                    <span>✿</span>
+                    <h3>Disease Detection</h3>
+                    <p>Upload a leaf image for AI analysis.</p>
+                </a>
+
+                <a href="soil-monitoring.html" class="quick-action-card">
+                    <span>⌁</span>
+                    <h3>Soil Monitoring</h3>
+                    <p>Connect sensors to view soil readings.</p>
+                </a>
+
+                <a href="assistant.html" class="quick-action-card">
+                    <span>✧</span>
+                    <h3>AI Assistant</h3>
+                    <p>Ask questions about plant care and farming.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="dashboard-panel activity-section">
+
+            <div class="panel-heading">
+                <div>
+                    <h2>Recent Activity</h2>
+                    <p>Your latest platform updates</p>
+                </div>
+            </div>
+
+            <div class="empty-state">
+
+                <span class="empty-state-icon">▤</span>
+
+                <h3>No Recent Activity</h3>
+
+                <p>
+                    Your farm updates, soil readings and AI analysis
+                    history will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <h3>AgriNiramaya</h3>
+            <p>Healthy Plants. Smarter Farming.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 AgriNiramaya | EDI Project
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

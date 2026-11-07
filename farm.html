@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farm Management | AgriNiramaya</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">♧</span>
+            <h2>AgriNiramaya</h2>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="farm.html" class="active">Farm Management</a>
+            <a href="disease-detection.html">Disease Detection</a>
+            <a href="soil-monitoring.html">Soil Monitoring</a>
+            <a href="assistant.html">AI Assistant</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="btn btn-outline">Logout</a>
+        </div>
+
+    </header>
+
+    <main class="farm-container">
+
+        <section class="farm-heading">
+
+            <div>
+                <span class="farm-label">FARM INFORMATION</span>
+
+                <h1>Farm Management</h1>
+
+                <p>
+                    Add your farm and crop details to get
+                    relevant plant health and soil insights.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="farm-info-banner">
+
+            <div class="farm-banner-icon">⌂</div>
+
+            <div>
+                <h3>Manage Your Farm in One Place</h3>
+
+                <p>
+                    Enter accurate farm information to help
+                    AgriNiramaya organize your agricultural data.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="farm-form-section">
+
+            <div class="farm-section-heading">
+                <h2>Farm Details</h2>
+                <p>Enter the basic information about your farm.</p>
+            </div>
+
+            <form class="farm-form" id="farmForm">
+
+                <div class="farm-form-grid">
+
+                    <div class="farm-field">
+                        <label for="farmName">Farm Name</label>
+
+                        <input
+                            type="text"
+                            id="farmName"
+                            name="farm_name"
+                            placeholder="Enter your farm name"
+                            required
+                        >
+                    </div>
+
+                    <div class="farm-field">
+                        <label for="farmLocation">Farm Location</label>
+
+                        <input
+                            type="text"
+                            id="farmLocation"
+                            name="location"
+                            placeholder="Enter village, city or location"
+                            required
+                        >
+                    </div>
+
+                    <div class="farm-field">
+                        <label for="farmSize">Farm Size</label>
+
+                        <input
+                            type="number"
+                            id="farmSize"
+                            name="farm_size"
+                            placeholder="Enter farm area"
+                            min="0"
+                            step="any"
+                            required
+                        >
+                    </div>
+
+                    <div class="farm-field">
+                        <label for="areaUnit">Area Unit</label>
+
+                        <select id="areaUnit" name="area_unit" required>
+                            <option value="">Select area unit</option>
+                            <option value="acre">Acre</option>
+                            <option value="hectare">Hectare</option>
+                            <option value="guntha">Guntha</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="farm-divider"></div>
+
+                <div class="farm-section-heading">
+                    <h2>Crop Information</h2>
+                    <p>Provide details about the crops grown on your farm.</p>
+                </div>
+
+                <div class="farm-form-grid">
+
+                    <div class="farm-field">
+                        <label for="cropType">Crop Type</label>
+
+                        <select id="cropType" name="crop_type" required>
+                            <option value="">Select crop type</option>
+                            <option value="rice">Rice</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="cotton">Cotton</option>
+                            <option value="soybean">Soybean</option>
+                            <option value="sugarcane">Sugarcane</option>
+                            <option value="maize">Maize</option>
+                            <option value="tomato">Tomato</option>
+                            <option value="potato">Potato</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="farm-field">
+                        <label for="cropVariety">Crop Variety</label>
+
+                        <input
+                            type="text"
+                            id="cropVariety"
+                            name="crop_variety"
+                            placeholder="Enter crop variety"
+                        >
+                    </div>
+
+                    <div class="farm-field">
+                        <label for="plantingDate">Planting Date</label>
+
+                        <input
+                            type="date"
+                            id="plantingDate"
+                            name="planting_date"
+                        >
+                    </div>
+
+                    <div class="farm-field">
+                        <label for="cropStage">Crop Growth Stage</label>
+
+                        <select id="cropStage" name="crop_stage">
+                            <option value="">Select growth stage</option>
+                            <option value="seedling">Seedling</option>
+                            <option value="vegetative">Vegetative</option>
+                            <option value="flowering">Flowering</option>
+                            <option value="fruiting">Fruiting</option>
+                            <option value="maturity">Maturity</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="farm-divider"></div>
+
+                <div class="farm-section-heading">
+                    <h2>Soil and Irrigation Details</h2>
+                    <p>Add information about your farm's soil and water supply.</p>
+                </div>
+
+                <div class="farm-form-grid">
+
+                    <div class="farm-field">
+                        <label for="soilType">Soil Type</label>
+
+                        <select id="soilType" name="soil_type" required>
+                            <option value="">Select soil type</option>
+                            <option value="black">Black Soil</option>
+                            <option value="alluvial">Alluvial Soil</option>
+                            <option value="red">Red Soil</option>
+                            <option value="sandy">Sandy Soil</option>
+                            <option value="clay">Clay Soil</option>
+                            <option value="loamy">Loamy Soil</option>
+                            <option value="other">Other</option>
+                            <option value="unknown">Not Sure</option>
+                        </select>
+                    </div>
+
+                    <div class="farm-field">
+                        <label for="irrigation">Irrigation Method</label>
+
+                        <select id="irrigation" name="irrigation_method" required>
+                            <option value="">Select irrigation method</option>
+                            <option value="drip">Drip Irrigation</option>
+                            <option value="sprinkler">Sprinkler Irrigation</option>
+                            <option value="flood">Flood Irrigation</option>
+                            <option value="rainfed">Rainfed</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="farm-divider"></div>
+
+                <div class="farm-section-heading">
+                    <h2>Farm Image</h2>
+                    <p>Upload an image of your farm or agricultural field.</p>
+                </div>
+
+                <div class="farm-field">
+                    <label for="farmImage">Upload Farm Image</label>
+
+                    <input
+                        type="file"
+                        id="farmImage"
+                        name="farm_image"
+                        accept="image/*"
+                    >
+
+                    <small class="farm-input-note">
+                        Supported formats: JPG, JPEG and PNG.
+                    </small>
+                </div>
+
+                <div class="farm-form-actions">
+
+                    <button type="reset" class="farm-reset-btn">
+                        Clear Form
+                    </button>
+
+                    <button type="button" class="farm-submit-btn">
+                        Save Farm Details
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="farm-empty-section">
+
+            <div class="farm-empty-icon">⌂</div>
+
+            <h2>No Farm Records Yet</h2>
+
+            <p>
+                Your saved farm information will appear here
+                after you add and save your first farm.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <h3>AgriNiramaya</h3>
+            <p>Healthy Plants. Smarter Farming.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 AgriNiramaya | EDI Project
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

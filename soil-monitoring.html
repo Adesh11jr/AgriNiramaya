@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Monitoring | AgriNiramaya</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">AgriNiramaya</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="farm.html">Farm Management</a>
+            <a href="disease-detection.html">Disease Detection</a>
+            <a href="soil-monitoring.html" class="active">Soil Monitoring</a>
+            <a href="assistant.html">AI Assistant</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="soil-container">
+
+        <section class="soil-heading">
+            <h1>Soil Monitoring</h1>
+            <p>Monitor soil conditions using connected IoT sensors.</p>
+        </section>
+
+        <section class="soil-info-banner">
+            <div class="soil-banner-icon">🌱</div>
+            <div>
+                <h3>Smart Soil Monitoring System</h3>
+                <p>View soil moisture, temperature and pH readings collected through the connected sensor device.</p>
+            </div>
+        </section>
+
+        <section class="sensor-connection-panel">
+            <div>
+                <h2>Sensor Connection</h2>
+                <p>ESP32 device connection status</p>
+            </div>
+
+            <span class="sensor-offline">Waiting for Connection</span>
+        </section>
+
+        <section class="soil-readings-section">
+
+            <div class="soil-section-heading">
+                <h2>Soil Parameters</h2>
+                <p>Latest readings from your connected sensors.</p>
+            </div>
+
+            <div class="soil-readings-grid">
+
+                <div class="soil-reading-card">
+                    <div class="soil-reading-icon">💧</div>
+                    <h3>Soil Moisture</h3>
+                    <div class="soil-reading-value">--</div>
+                    <p>Waiting for sensor data</p>
+                </div>
+
+                <div class="soil-reading-card">
+                    <div class="soil-reading-icon">🌡️</div>
+                    <h3>Soil Temperature</h3>
+                    <div class="soil-reading-value">--</div>
+                    <p>Waiting for sensor data</p>
+                </div>
+
+                <div class="soil-reading-card">
+                    <div class="soil-reading-icon">🧪</div>
+                    <h3>Soil pH</h3>
+                    <div class="soil-reading-value">--</div>
+                    <p>Waiting for sensor data</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="soil-condition-section">
+
+            <div class="soil-section-heading">
+                <h2>Soil Condition Report</h2>
+                <p>Information based on actual sensor readings.</p>
+            </div>
+
+            <div class="soil-empty-state">
+                <div class="soil-empty-icon">📊</div>
+                <h3>No Soil Data Available</h3>
+                <p>Connect your ESP32 device to receive soil measurements and view the soil condition report.</p>
+            </div>
+
+        </section>
+
+        <section class="soil-last-update">
+            <p>Last Updated: Not available</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <h3>AgriNiramaya</h3>
+            <p>Healthy Plants. Smarter Farming.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <p class="copyright">© 2026 AgriNiramaya. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

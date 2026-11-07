@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Detection | AgriNiramaya</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">AgriNiramaya</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="farm.html">Farm Management</a>
+            <a href="disease-detection.html" class="active">Disease Detection</a>
+            <a href="soil-monitoring.html">Soil Monitoring</a>
+            <a href="assistant.html">AI Assistant</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="disease-container">
+
+        <section class="disease-heading">
+            <h1>Plant Disease Detection</h1>
+            <p>Upload a clear image of your plant leaf to check its health.</p>
+        </section>
+
+        <section class="disease-info-banner">
+            <div class="disease-banner-icon">🌿</div>
+            <div>
+                <h3>AI-Powered Plant Health Analysis</h3>
+                <p>Our system will analyse the uploaded image and provide disease information and care suggestions.</p>
+            </div>
+        </section>
+
+        <section class="disease-upload-section">
+
+            <div class="disease-section-heading">
+                <h2>Upload Plant Image</h2>
+                <p>Select a clear image of the affected plant leaf.</p>
+            </div>
+
+            <form class="disease-upload-form" id="diseaseForm">
+
+                <label for="plantImage" class="disease-upload-box">
+                    <div class="upload-icon">📷</div>
+                    <h3>Choose Plant Image</h3>
+                    <p>Click here to select an image from your device</p>
+                    <span>Supported format: JPG, JPEG, PNG</span>
+                </label>
+
+                <input
+                    type="file"
+                    id="plantImage"
+                    name="plantImage"
+                    accept="image/png, image/jpeg"
+                    hidden
+                >
+
+                <div class="disease-image-preview" id="imagePreview">
+                    <p>No image selected yet.</p>
+                </div>
+
+                <button type="button" class="disease-analyze-btn">
+                    Analyse Plant
+                </button>
+
+            </form>
+        </section>
+
+        <section class="disease-result-section">
+
+            <div class="disease-section-heading">
+                <h2>Analysis Results</h2>
+                <p>Your plant health report will appear here after analysis.</p>
+            </div>
+
+            <div class="disease-empty-state">
+                <div class="result-icon">🔬</div>
+                <h3>No Analysis Available</h3>
+                <p>Upload a plant image to view the disease prediction and health report.</p>
+            </div>
+
+        </section>
+
+        <section class="disease-features">
+            <h2>What Will the Analysis Include?</h2>
+
+            <div class="disease-feature-grid">
+
+                <div class="disease-feature-card">
+                    <div>🦠</div>
+                    <h3>Disease Prediction</h3>
+                    <p>Identify possible plant diseases from the uploaded image.</p>
+                </div>
+
+                <div class="disease-feature-card">
+                    <div>📊</div>
+                    <h3>Confidence Score</h3>
+                    <p>View the model's confidence in its prediction.</p>
+                </div>
+
+                <div class="disease-feature-card">
+                    <div>🌱</div>
+                    <h3>Care Suggestions</h3>
+                    <p>Get relevant plant care and preventive suggestions.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <h3>AgriNiramaya</h3>
+            <p>Healthy Plants. Smarter Farming.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <p class="copyright">© 2026 AgriNiramaya. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
